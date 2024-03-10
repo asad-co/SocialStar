@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragments.SignupDetails">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FAF7F7"
+        android:foregroundGravity="center"
+        android:foregroundTint="#FFFFFF"
+        app:srcCompat="@drawable/personal" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="One Last Step"
+        android:textColor="#0B0B0B"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signup_details_info_txt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Please Enter Information About Yourself"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColorHint="#717171"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeErrorColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_name_edit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawableLeft="@drawable/profile_24_icon"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/blue"
+            android:ems="0"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="17dp"
+            android:textColor="#000000"
+            android:textColorHint="#3A3A3A"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#717171"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeErrorColor="@color/red"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
+        app:hintTextColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_profession_edit_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/business_24_icon"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/blue"
+            android:ems="0"
+            android:hint="Enter Your Profession"
+            android:inputType="textPersonName"
+            android:paddingBottom="17dp"
+            android:textColor="#000000"
+            android:textColorHint="#3A3A3A"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/signup_details_warning_txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:background="@color/Transparent"
+        android:text="Please Enter Details"
+        android:layout_gravity="left" Gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:textSize="15sp">
+
+    </TextView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_signup_btn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_1"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+</LinearLayout>

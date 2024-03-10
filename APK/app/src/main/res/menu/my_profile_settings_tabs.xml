@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/profile_edit_menuitem_id"
+        android:orderInCategory="100"
+        android:title="Edit Profile"
+        app:showAsAction="never|withText" />
+
+    <item
+        android:id="@+id/profile_advanced_setting_menuitem_id"
+        android:orderInCategory="100"
+        android:title="Advanced Settings"
+        app:showAsAction="never|withText" />
+
+    <item
+        android:id="@+id/profile_signout_menuitem_id"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="never|withText" />
+
+</menu>

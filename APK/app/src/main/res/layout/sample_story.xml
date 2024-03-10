@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/friend_story_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/rain_drops_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1">
+
+                    <com.devlomi.circularstatusview.CircularStatusView
+                        android:id="@+id/story_profile_pic_ring_id"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/circle_4"
+                        app:layout_constraintBottom_toBottomOf="@+id/story_profile_pic_img_id"
+                        app:layout_constraintEnd_toEndOf="@+id/story_profile_pic_img_id"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="@+id/story_profile_pic_img_id"
+                        app:layout_constraintTop_toTopOf="@+id/story_profile_pic_img_id"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:portion_color="@color/light_red"
+                        app:portion_spacing="4dp"
+                        app:portion_width="4dp"
+                        app:portions_count="8"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/story_profile_pic_img_id"
+                        android:layout_width="50dp"
+                        android:layout_height="0dp"
+                        android:padding="5dp"
+
+                        android:src="@drawable/profile_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/friend_name_txt_id"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/black_shade"
+                    android:foregroundGravity="bottom"
+                    android:gravity="bottom"
+                    android:text="TextView"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

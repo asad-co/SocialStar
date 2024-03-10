@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/comment_comment_profile_pic_img_id"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+
+                android:padding="5dp"
+                android:src="@drawable/profile_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/comment_comment_profile_pic_ring_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/circle_1"
+                app:layout_constraintBottom_toBottomOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintEnd_toEndOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintTop_toTopOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/comment_comment_name_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintTop_toTopOf="@+id/comment_comment_profile_pic_img_id" />
+
+            <TextView
+                android:id="@+id/comment_comment_profession_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:text="TextView"
+                android:textColor="#818181"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintTop_toBottomOf="@+id/comment_comment_name_txt_id" />
+
+            <TextView
+                android:id="@+id/comment_comment_time_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="TextView"
+                android:textColor="#818181"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/comment_comment_profession_txt_id"
+                app:layout_constraintTop_toBottomOf="@+id/comment_comment_profession_txt_id" />
+
+            <TextView
+                android:id="@+id/comment_comment_usercomment_txt_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="TextView"
+                android:textColor="#0E0E0E"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/comment_comment_profile_pic_img_id"
+                app:layout_constraintTop_toBottomOf="@+id/comment_comment_profile_pic_img_id" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comment_comment_usercomment_txt_id">
+
+                <ImageView
+                    android:id="@+id/comment_comment_like_img_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/thumb_up_icon" />
+
+                <TextView
+                    android:id="@+id/comment_comment_like_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/comment_comment_dislike_img_id"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/thumb_down_icon" />
+
+                <TextView
+                    android:id="@+id/comment_comment_dislike_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

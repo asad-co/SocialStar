@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/search_profile_pic_img_id"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:src="@drawable/profile_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/search_profile_pic_ring_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/circle_1"
+                app:layout_constraintBottom_toBottomOf="@+id/search_profile_pic_img_id"
+                app:layout_constraintEnd_toEndOf="@+id/search_profile_pic_img_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/search_profile_pic_img_id"
+                app:layout_constraintTop_toTopOf="@+id/search_profile_pic_img_id"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/search_user_name_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/search_profile_pic_img_id"
+                app:layout_constraintTop_toTopOf="@+id/search_profile_pic_img_id" />
+
+            <TextView
+                android:id="@+id/search_user_profession_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="#515151"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/search_user_name_txt_id"
+                app:layout_constraintTop_toBottomOf="@+id/search_user_name_txt_id" />
+
+            <ImageView
+                android:id="@+id/search_follow_img_id"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/light_blue"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/search_addfriend_img_id"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/follow_icon" />
+
+            <ImageView
+                android:id="@+id/search_addfriend_img_id"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/light_blue"
+                android:padding="5dp"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/add_friend_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
